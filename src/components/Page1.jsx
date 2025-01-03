@@ -13,11 +13,11 @@ export default function Page1() {
         <div className="absolute left-0 ml-4 flex flex-col items-start justify-center h-50 w-85 p-4 bg-black bg-opacity-35 border-2 border-gray-300 rounded-2xl" id="bridging">
           <h1 className="text-4xl text-green-500">Bridging Top</h1>
           <h1 className="text-4xl text-green-500"> Talent  <span className="text-4xl text-black"> With</span></h1>
-          <h1 className="text-4xl text-black">Top Companies</h1>
-          <p className="text-sm text-black mt-4">
+          <h1 className="text-4xl text-white">Top Companies</h1>
+          <p className="text-sm text-white mt-4">
             With our quick and easy recruitment services you are
           </p>
-          <p className="text-sm text-black">
+          <p className="text-sm text-white">
             just one call away from building your dream team!
           </p>
         </div>
