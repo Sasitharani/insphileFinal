@@ -3,7 +3,7 @@ import React from 'react';
 export default function Page1() {
   return (
     <>
-      <div id="home" className=" relative flex items-center justify-center min-h-screen">
+      <div id="home" className="relative flex items-center justify-center w-full h-full" style={{ height: '100vh', width: '100vw' }}>
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <div className="absolute left-0 ml-4 mb-96 flex flex-col items-start justify-center h-50 w-85 p-4">
           <p className="text-[8px] text-black">INSPHILE</p>
