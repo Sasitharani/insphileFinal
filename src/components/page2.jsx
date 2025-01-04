@@ -1,24 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import '../index.css'; // Import the CSS file where the font is defined
 
 export default function Page2() {
+  useEffect(() => {
+    document.body.style.overflowX = 'hidden';
+  }, []);
+
   return (
     <>
-          <div id="about" className="relative flex flex-col items-center justify-center min-h-screen  border-2 border-blue-800 p-4">
-        <div className="absolute inset-0 bg-cover bg-center bg-fixed" style={{ backgroundImage: "url('/img/hands.jpg')" }}></div>
-        <div className="absolute inset-0 bg-black opacity-50"></div>
-        <div className="absolute bg-black left-0  mb-96 flex flex-col items-start justify-center h-50 w-85 p-4">
-          <p className="text-[8px] text-white">INSPHILE</p>
-          <p className="text-[8px] text-white">MANAGEMENT</p>
-          <p className="text-[8px] text-white">SOLUTIONS</p>
+      <div className="font-teko">
+        <div className="text-black relative flex flex-col w-full h-full text-4xl md:text-6xl gap-y-4 mt-28 ms-28">
+          <p className="">Struggling to find the right talent?</p>
+          <p className="">Candidate</p>
+          <div className="text-lg md:text-xl ml-10 md:ml-96 px-10 md:px-28 mr-5">
+            <p className="">We Many companies face the challenge of finding the right candidate. Studies show that companies can spend up to 40% of their working hours on tasks that don't generate income, like manual recruitment processes (Source: McKinsey & Company).</p>
+            <p className="">We at INSPHILE bring you best-in-class talent quicker and more efficiently. Our expert methodology offers a streamlined and holistic recruitment process that drastically reduces your time and cost per hire.</p>
+          </div>
         </div>
-        <div className="relative mt-36 h-96 w-[400px] flex flex-col items-center justify-evenly p-4 bg-black bg-opacity-50 border-2 border-gray-300 rounded-2xl">
-          <h2 className="text-4xl font-bold mb-4 text-black ">About Us</h2>
-          <p className="text-lg text-white text-center">
-            Welcome to INSPHILE, your premier partner in bridging talent and opportunity.
-          </p>
-          <p className="text-lg text-white text-center mt-4">
-            Founded in early 2017 by Ms. Subashini T, we are a top recruitment service provider, committed to enhancing companies in various sectors with superior human resource solutions. At INSPHILE, we do more than just fill jobs—we create opportunities for success and growth for both our clients and the candidates we help.
-          </p>
-        </div>
-      </div></>
-    );}
+      </div>
+    </>
+  );
+}
