@@ -42,7 +42,7 @@ export default function Front() {
   };
 
   return (
-    <div>
+    <div className='overflow-x-hidden'>
         <div className="fixed bg-neutral-600 z-10 rounded-2xl opacity-50 left-0 mt-60 ml-2 flex flex-col  h-50 w-85 p-4 text-white">
           <p className="text-[8px] ">INSPHILE</p>
           <p className="text-[8px] ">MANAGEMENT</p>
