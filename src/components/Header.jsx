@@ -24,16 +24,11 @@ export default function Header() {
           </button>
         </div>
         <ul className={`md:flex space-x-12 ${isMenuOpen ? 'fixed inset-0 bg-black flex flex-col items-start justify-center space-y-4 p-4' : 'hidden'}`}>
-          <li className="hover:text-yellow-500 font-medium text-sm"><a href="#home">Home</a></li>
-          <li className="hover:text-yellow-500 font-medium text-sm"><a href="#service">Our Services</a></li>
-          <li 
-            className="hover:text-yellow-500 font-medium text-sm relative group"
-          >
-            <a href="#wwd" className="flex items-center">What do we do</a>
-
-          </li>
-          <li className="hover:text-yellow-500 font-medium text-sm"><a href="#sectors">Sectors</a></li>
-          <li className="hover:text-yellow-500 font-medium text-sm"><a href="#contact">Contact</a></li>
+          <li className="hover:text-yellow-500 font-medium text-sm"><a href="#home" onClick={() => setIsMenuOpen(false)}>Home</a></li>
+          <li className="hover:text-yellow-500 font-medium text-sm"><a href="#service" onClick={() => setIsMenuOpen(false)}>Our Services</a></li>
+          <li className="hover:text-yellow-500 font-medium text-sm"><a href="#wwd" onClick={() => setIsMenuOpen(false)}>What do we do</a></li>
+          <li className="hover:text-yellow-500 font-medium text-sm"><a href="#sectors" onClick={() => setIsMenuOpen(false)}>Sectors</a></li>
+          <li className="hover:text-yellow-500 font-medium text-sm"><a href="#contact" onClick={() => setIsMenuOpen(false)}>Contact</a></li>
         </ul>
       </nav>
     </header>
